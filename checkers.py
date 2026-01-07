@@ -1,5 +1,6 @@
 import pygame
 import os
+import random
 
 pygame.init()
 WIN_WIDTH = 16 * 90
@@ -12,8 +13,14 @@ CELL_HEIGHT = 81
 CELL_WIDTH = 156
 BLACK_CHECKER = pygame.image.load(os.path.join('black.png'))
 WHITE_CHECKER = pygame.image.load(os.path.join('white.png'))
+ARE_YOU_BLACK_OR_WHITE = random.randint(0, 1)
 
-pygame.display.set_caption("Checkers")
+if ARE_YOU_BLACK_OR_WHITE == 0:
+    pygame.display.set_caption("Checkers white team")
+elif ARE_YOU_BLACK_OR_WHITE == 1:
+    pygame.display.set_caption("Checkers black team")
+else:
+    pygame.display.set_caption("Checkers")
 
 for row in range(8):
     for col in range(8):
@@ -40,8 +47,6 @@ while RUNNING:
         SCREEN.blit(BLACK_CHECKER, (cell.x, cell.y))
 
     for cell in BOARD_CELLS:
-        pygame.draw.rect(surface=SCREEN, color=(0, 0, 0), rect=cell, width=2)
+        pygame.draw.rect(surface=SCREEN, color=(0, 0, 0), rect=cell, width=5)
     
     pygame.display.flip()
-
-#40
