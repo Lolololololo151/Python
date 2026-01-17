@@ -13,5 +13,3 @@ while RUNNING:
     
     SCREEN.fill('brown')
     pygame.display.flip()
-
-    print(pygame.mouse.get_pos()[0])
