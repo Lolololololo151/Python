@@ -10,8 +10,10 @@ import pygame
 pygame.init()
 
 SCALE = 90
-WIN_WIDTH  = 14 * SCALE
-WIN_HEIGHT = 12 * SCALE
+#WIN_WIDTH  = 14 * SCALE
+WIN_WIDTH = 16 * 90
+#WIN_HEIGHT = 12 * SCALE
+WIN_HEIGHT = 8 * SCALE
 BG_COLOR = pygame.Color("#181818")
 SCREEN = pygame.display.set_mode([WIN_WIDTH, WIN_HEIGHT])
 
