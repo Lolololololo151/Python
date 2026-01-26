@@ -18,7 +18,7 @@ BG_COLOR = pygame.Color("#181818")
 SCREEN = pygame.display.set_mode([WIN_WIDTH, WIN_HEIGHT])
 
 BOARD_PATTERN_COLOR_A = pygame.Color("white")
-BOARD_PATTERN_COLOR_B = pygame.Color("#185018")
+BOARD_PATTERN_COLOR_B = pygame.Color("black")
 IMAGES = {
     "black": pygame.image.load('black.png'),
     "white": pygame.image.load('white.png'),
